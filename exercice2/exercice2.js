@@ -3,7 +3,7 @@ let liste = document.getElementById("maListe");
 
 const BtnAjouter = document.getElementById("ajouterBtn");
 
-
+//fonction qui ajoute le nouveau élément <li> dans la liste
 function fonction_ajouter() {
 
     let nouveau_element = document.getElementById('nouvelElement').value;
@@ -21,4 +21,5 @@ function fonction_ajouter() {
     document.getElementById('nouvelElement').value='';
 }
 
+//lors du clique du bouton, la fonction "fonction_ajouter" s'éxecute
 BtnAjouter.addEventListener("click", fonction_ajouter);

@@ -6,6 +6,8 @@ let message_paragraphe = document.getElementById("messageTimer");
 message_paragraphe.style.display = "none";
 
 
+//lors du clique du bouton, un décompte de 10 secondes commence avant l'affichage d'un texte
+
 BtnDemarrerTimer.addEventListener("click", function (){
     setTimeout(message_affiche, 10000);
 });

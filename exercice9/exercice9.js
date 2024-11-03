@@ -10,6 +10,8 @@ function demarrageCompteRebours(){
 
 }
 
+//lors du clique du bouton, la fonction "demarrageCompteRebours" s'éxecute
+
 BtnDemmarerCompteRebours.addEventListener("click", demarrageCompteRebours);
 
 /*
