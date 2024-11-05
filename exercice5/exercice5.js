@@ -6,7 +6,13 @@ let BtnCliquer = document.getElementById("clicBtn");
 function cliquer(){
     let span_valeur_actuelle = parseInt(span.textContent);
     span_valeur_actuelle+=1;
+
+    if(span_valeur_actuelle === 10){
+        span_valeur_actuelle = 0
+    }
+
     span.textContent = span_valeur_actuelle;
+
 }
 
 //lors du clique du bouton, la fonction "cliquer" s'éxecute
