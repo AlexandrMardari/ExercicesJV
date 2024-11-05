@@ -9,7 +9,7 @@ function ajouter(){
 
 
     //valeur entrée dans le input
-    let valeurInput = $('#nouvelElement').val;
+    let valeurInput = $('#nouvelElement').val();
 
     //créer un élément <li>
     let li = $('<li>').text(valeurInput);
@@ -21,7 +21,6 @@ function ajouter(){
     //valeurInput.text("");
 
 }
-
 
 
 //action lorsqu'on clique sur le bouton ajouter
