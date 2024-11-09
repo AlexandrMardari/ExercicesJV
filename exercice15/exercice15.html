@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manipuler le DOM et CSS - Exercice 15</title>
+  <style>
+    #galerie {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .image-container {
+      position: relative;
+      width: 100px;
+      height: 100px;
+    }
+    .image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .supprimerBtn {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      background-color: red;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+<h2>Galerie d'images</h2>
+<label>URL de l'image : <input type="text" id="imageURL"></label><br>
+<button id="ajouterImageBtn">Ajouter l'image</button>
+
+<div id="galerie"></div>
+
+<script src="exercice15.js"></script>
+</body>
+</html>

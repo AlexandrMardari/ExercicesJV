@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manipuler le DOM et CSS - Exercice 13</title>
+  <style>
+    #carte {
+      width: 300px;
+      height: 200px;
+      border: 1px solid black;
+      padding: 10px;
+      margin-top: 20px;
+      display: none;
+    }
+    #carte .nom {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    #carte .email {
+      font-size: 16px;
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+<h2>Générateur de carte de visite</h2>
+<label>Nom : <input type="text" id="nom"></label><br>
+<label>Email : <input type="email" id="email"></label><br>
+<label>Couleur de fond : <input type="color" id="couleurFond"></label><br>
+<button id="genererBtn">Générer la carte</button>
+
+<div id="carte">
+  <div class="nom" id="carteNom"></div>
+  <div class="email" id="carteEmail"></div>
+</div>
+
+<script src="exercice13.js"></script>
+</body>
+</html>
