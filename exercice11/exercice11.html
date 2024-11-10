@@ -4,16 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manipuler le DOM et CSS - Exercice 11</title>
+    <!--<script src="exercice11.js" defer></script>-->
+    <script src="jquery11.js" defer></script>
     <style>
         body {
-            background-color: white;
-            color: black;
             transition: background-color 0.3s, color 0.3s;
         }
-        .sombre {
+
+        .light {
+            background-color: white;
+            color: black;
+        }
+
+        .dark {
             background-color: black;
             color: white;
         }
+
         #toggleThemeBtn {
             padding: 10px;
             margin: 20px;
@@ -22,9 +29,9 @@
     </style>
 </head>
 <body>
-<h2>Changer le thème (Mode Clair/Sombre)</h2>
+<h2 id="texteH2">Changer le thème (Mode Clair/Sombre)</h2>
 <button id="toggleThemeBtn">Mode Sombre</button>
 
-<script src="exercice11.js"></script>
+
 </body>
 </html>
